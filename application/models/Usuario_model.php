@@ -29,8 +29,8 @@ class Usuario_model extends CI_Model
 
     public function save($usuario)
     {
-        $guarda = $usuario[0];
-        $this->db->set($this->_setUsuario($guarda))->insert('usuario');
+
+        $this->db->set($this->_setUsuario($usuario))->insert('usuario');
 
         if ($this->db->affected_rows() === 1) {
             return $this->db->insert_id();

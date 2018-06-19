@@ -41,13 +41,13 @@ class Usuario extends REST_Controller
 
     public function index_post()
     {
-
-
-        if (!$this->post('Usuario')) {
-             $this->response(array($this->post('Usuario')), 409);
+        $data = json_decode( file_get_contents( 'php://input' ), true );
+        //$this->response($data, 200);
+        if (!$data) {
+             $this->response($data, 409);
         }
 
-        $id = $this->usuario_model->save($this->post('Usuario'));
+        $id = $this->usuario_model->save($data);
 
         if (!is_null($id)) {
             $this->response(array('Usuario' => $id), 200);
