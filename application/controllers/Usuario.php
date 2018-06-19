@@ -50,7 +50,7 @@ class Usuario extends REST_Controller
         $id = $this->usuario_model->save($data);
 
         if (!is_null($id)) {
-            $this->response(array('Usuario' => $id), 200);
+            $this->response($data, 200);
         } else {
             $this->response(array('Erro ao salvar usuario!!!'), 400);
         }
