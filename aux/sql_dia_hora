@@ -1,0 +1,20 @@
+ INSERT INTO hora_aula (hora_inicio , hora_fim) VALUES ('7:30', '8:20');
+       INSERT INTO hora_aula (hora_inicio , hora_fim) VALUES ('8:20', '9:10');
+       INSERT INTO hora_aula (hora_inicio , hora_fim) VALUES ('9:10', '10:00');
+       INSERT INTO hora_aula (hora_inicio , hora_fim) VALUES ('10:00', '10:50');
+       INSERT INTO hora_aula (hora_inicio , hora_fim) VALUES ('10:50', '11:40');
+       INSERT INTO hora_aula (hora_inicio , hora_fim) VALUES ('11:40', '12:30');
+       INSERT INTO hora_aula (hora_inicio , hora_fim) VALUES ('13:30', '14:20');
+       INSERT INTO hora_aula (hora_inicio , hora_fim) VALUES ('14:20', '15:10');
+       INSERT INTO hora_aula (hora_inicio , hora_fim) VALUES ('15:10', '16:00');
+       INSERT INTO hora_aula (hora_inicio , hora_fim) VALUES ('16:00', '16:50');
+       INSERT INTO hora_aula (hora_inicio , hora_fim) VALUES ('16:50', '17:40');
+       INSERT INTO hora_aula (hora_inicio , hora_fim) VALUES ('17:40', '18:30');
+
+       INSERT INTO dia_semana (nome) VALUES ('Dom');
+       INSERT INTO dia_semana (nome) VALUES ('Seg');
+       INSERT INTO dia_semana (nome) VALUES ('Ter');
+       INSERT INTO dia_semana (nome) VALUES ('Qua');
+       INSERT INTO dia_semana (nome) VALUES ('Qui');
+       INSERT INTO dia_semana (nome) VALUES ('Sex');
+       INSERT INTO dia_semana (nome) VALUES ('Sab');
