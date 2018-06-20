@@ -47,7 +47,7 @@ class Usuario extends REST_Controller
              $this->response($data, 409);
         }
 
-        $id = $this->usua0rio_model->save($data);
+        $id = $this->usuario_model->save($data);
 
         if (!is_null($id)) {
             $this->response($data, 200);
